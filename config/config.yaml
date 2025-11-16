@@ -1,0 +1,9 @@
+app_name: sciagent_system
+default_model: gemini-2.5-pro
+
+database:
+  url: sqlite:///./data/agent_sessions.sqlite
+
+vertex_search:
+  # Format: projects/<PROJECT_ID>/locations/<REGION>/collections/default_collection/dataStores/<DATASTORE_ID>
+  data_store_id: "projects/gen-lang-client-0147738034/locations/europe-west4/collections/default_collection/dataStores/carbon-kb_1763320721247"
