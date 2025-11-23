@@ -4,6 +4,9 @@ from typing import Optional
 from google.adk.tools.vertex_ai_search_tool import VertexAiSearchTool
 from google.adk.tools.google_search_tool import GoogleSearchTool
 
+from dotenv import load_dotenv
+
+load_dotenv(dotenv_path="C:/Users/cmart/google-agents/code-git/.env")
 
 def build_vertex_ai_search_tool(
     data_store_id: Optional[str] = None,
@@ -25,7 +28,7 @@ def build_vertex_ai_search_tool(
 
     return VertexAiSearchTool(
         data_store_id=data_store_id,
-        bypass_multi_tools_limit=bypass_multi_tools_limit,
+        # bypass_multi_tools_limit=bypass_multi_tools_limit,
     )
 
 
@@ -38,4 +41,4 @@ def build_google_search_tool(
     Note: Make sure you comply with Google Search grounding UI requirements
     when using this in production. 
     """
-    return GoogleSearchTool(bypass_multi_tools_limit=bypass_multi_tools_limit)
+    return GoogleSearchTool() #bypass_multi_tools_limit=bypass_multi_tools_limit)
