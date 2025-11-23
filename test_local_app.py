@@ -97,11 +97,11 @@ async def main():
 
     # Now send a carbon-capture query using run_async
     query = (
-        #1 "Estimate the energy penalty (GJ per ton CO2) and main loss mechanisms "
-        #1 "for amine-based post-combustion CO2 capture on a 500 MW coal plant."
+        "Estimate the energy penalty (GJ per ton CO2) and main loss mechanisms "
+        "for amine-based post-combustion CO2 capture on a 500 MW coal plant."
         #2 "What are the latest advancements in solid sorbent materials for direct air capture of CO2?"
-        "Given a 100-unit apartment building in Barcelona, design a retrofit (insulation + heat pumps + solar + storage) " 
-        "that cuts annual CO₂ emissions by at least 70%, and estimate costs + payback."
+        #3 "Given a 100-unit apartment building in Barcelona, design a retrofit (insulation + heat pumps + solar + storage) " 
+        #3 "that cuts annual CO₂ emissions by at least 70%, and estimate costs + payback."
     )
 
     content = types.Content(
