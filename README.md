@@ -1,4 +1,4 @@
-# sci_agents_google
+# AI Climate Scientist for Low-Carbon Technology Design
 I built an AI assistant that can reason about carbon capture systems like a junior research engineer:
 - Answer questions such as:
     - “What’s the energy penalty (GJ/ton CO₂) for amine scrubbing on a 500 MW coal plant?”
@@ -43,5 +43,7 @@ A single monolithic LLM prompt (“be good at everything”) isn’t ideal for t
     - RAG tool on GeneralSciWorker.
     - Code executor on Math/Physics.
 - The system becomes modular: I can swap models, tools, or agents without rewriting everything.
+<img width="1024" height="1024" alt="architecture" src="https://github.com/user-attachments/assets/2f3a4c84-267a-41c3-921f-bb8860130165" />
+
 
 To sum up, agents let me mirror the way a real team would approach the problem (coordinator + domain experts + tools) and make the system more maintainable and extensible.
